@@ -1,0 +1,81 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Laboratorio 1"
+Date "2020-08-18"
+Rev "0"
+Comp "ecaballero"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:R R?
+U 1 1 5F3C25D7
+P 1950 5050
+F 0 "R?" V 2135 5050 40  0000 C CNN
+F 1 "1K" V 2059 5050 40  0000 C CNN
+F 2 "" V 1880 5050 30  0000 C CNN
+F 3 "" H 1950 5050 30  0000 C CNN
+	1    1950 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5F3C356A
+P 2800 4550
+F 0 "R?" V 2985 4550 40  0000 C CNN
+F 1 "1K" V 2909 4550 40  0000 C CNN
+F 2 "" V 2730 4550 30  0000 C CNN
+F 3 "" H 2800 4550 30  0000 C CNN
+	1    2800 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 5050 2550 4550
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F3C5386
+P 1700 5400
+F 0 "#PWR?" H 1700 5400 40  0001 C CNN
+F 1 "GNDA" H 1700 5467 40  0000 C CNN
+F 2 "" H 1700 5400 60  0000 C CNN
+F 3 "" H 1700 5400 60  0000 C CNN
+	1    1700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 5F3C5797
+P 1900 4450
+F 0 "#PWR?" H 1900 4580 20  0001 C CNN
+F 1 "+5VA" H 1900 4588 30  0000 C CNN
+F 2 "" H 1900 4450 60  0000 C CNN
+F 3 "" H 1900 4450 60  0000 C CNN
+	1    1900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4650 1900 4650
+Wire Wire Line
+	1900 4650 1900 4450
+Text Label 1650 4650 0    50   ~ 0
+Voltage
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F3C6426
+P 1100 4200
+F 0 "#FLG?" H 1100 4295 30  0001 C CNN
+F 1 "PWR_FLAG" H 1100 4408 30  0000 C CNN
+F 2 "" H 1100 4200 60  0000 C CNN
+F 3 "" H 1100 4200 60  0000 C CNN
+	1    1100 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 1050 4550 0    50   ~ 0
+Comments\n
+$EndSCHEMATC
